@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:blurkit="http://schemas.android.com/apk/res-auto"
+    android:background="@color/second"
+    tools:context=".Fragment.Popular">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="100dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/backIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/third" />
+
+                <TextView
+                    android:id="@+id/backTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/popular"
+                    android:textSize="@dimen/title"
+                    android:textColor="@color/third"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sortCon"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item amount:"
+                            android:textColor="@color/fourth"
+                            android:textSize="14sp"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="155"
+                            android:textColor="@color/third"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/sortBtn"
+                   android:gravity="center"
+                   android:layout_weight="1"
+                   android:layout_width="0dp"
+                   android:padding="10dp"
+                   android:background="@drawable/rounded"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:layout_width="18dp"
+                       android:layout_height="15dp"
+                       android:src="@drawable/ic_baseline_sort_24"
+                       android:layout_marginRight="6dp"
+                       app:tint="@color/third" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Sort by"
+                       android:textSize="14sp"
+                       android:textColor="@color/third"
+                       />
+
+               </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRec"
+                android:layout_marginRight="16dp"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/secondTop"
+        android:visibility="gone"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:background="@color/second"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item amount:"
+                android:textColor="@color/fourth"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="155"
+                android:textColor="@color/third"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sortBtn2"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_sort_24"
+                android:layout_marginRight="6dp"
+                app:tint="@color/third" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sort by"
+                android:textSize="14sp"
+                android:textColor="@color/third"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/blurLayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:blk_blurRadius="3"
+        app:blk_downscaleFactor="0.12"
+        app:blk_fps="0"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+    <include
+        android:layout_centerInParent="true"
+        layout="@layout/error_page"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

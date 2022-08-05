@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Furniture space</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Kategoriya</string>
+    <string name="see_all">See all</string>
+    <string name="popular">Popular</string>
+    <string name="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis voluptas doloremque consectetur, saepe voluptates ipsa tempore, nostrum non quidem at molestiae perspiciatis error praesentium odio autem laudantium distinctio numquam.\n
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis voluptas doloremque consectetur, saepe voluptates ipsa tempore, nostrum non quidem at molestiae perspiciatis error praesentium odio autem laudantium distinctio numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis voluptas doloremque consectetur, saepe voluptates ipsa tempore, nostrum non quidem at molestiae perspiciatis error praesentium odio autem laudantium distinctio numquam.\n
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis voluptas doloremque consectetur, saepe voluptates ipsa tempore, nostrum non quidem at molestiae perspiciatis error praesentium odio autem laudantium distinctio numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, veritatis voluptas doloremque consectetur, saepe voluptates ipsa tempore, nostrum non quidem at
+    </string>
+    <string name="send_code"><u>Tassyklaýjy kody ugratmak</u></string>
+    <string name="phone_number">Telefon belgiňiz</string>
+    <string name="kod">Tassyklaýjy kod</string>
+    <string name="not_update">Eger-de siziň sebediňizde haryt bar bolsa telefon belgiňizi üýtgetmek mümkin däl!</string>
+    <string name="update">Üýtget</string>
+    <string name="username">Ulanyjy adyňyz</string>
+    <string name="address">Salgyňyz</string>
+    <string name="my_profile">Meniň hasabym</string>
+    <string name="update_profile">Profil</string>
+    <string name="update_number">Telefon belgi</string>
+    <string name="update_password">Açar sözi</string>
+    <string name="current_password">Häzirki açar sözüňiz</string>
+    <string name="new_password">Täze açar sözüňiz</string>
+    <string name="confirm_new_password">Täze açar sözüňizi tassyklaň</string>
+    <string name="password">Açar sözüňiz</string>
+    <string name="sign_in">Içeri gir</string>
+    <string name="next">Indiki</string>
+    <string name="create_account">Hasap döret</string>
+    <string name="noInternet">Intenet ýok</string>
+    <string name="errorDesc">Baglanşyp bilmedi</string>
+    <string name="tryAgain">Gaýtadan</string>
+    <string name="emptyTitle">Maglumat tapylmady</string>
+    <string name="emptyMessage">Bu bölüme degişli maglumat tapylmady</string>
+</resources>

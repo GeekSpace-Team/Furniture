@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/top_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by"
+            android:drawableLeft="@drawable/ic_baseline_close_24"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:textColor="@color/third"
+            android:drawableTint="@color/third"
+            />
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:labelFor="@+id/first"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popular"
+                    android:textSize="18sp"
+                    android:textColor="@color/third"
+                    />
+            <CheckBox
+                android:id="@+id/first"
+                android:button="@drawable/check_box"
+                android:layoutDirection="rtl"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:labelFor="@+id/first"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descending price"
+                android:textSize="18sp"
+                android:textColor="@color/third"
+                />
+            <CheckBox
+                android:id="@+id/second"
+                android:button="@drawable/check_box"
+                android:layoutDirection="rtl"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:labelFor="@+id/first"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ascending price"
+                android:textSize="18sp"
+                android:textColor="@color/third"
+                />
+            <CheckBox
+                android:id="@+id/third"
+                android:button="@drawable/check_box"
+                android:layoutDirection="rtl"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:labelFor="@+id/first"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount products"
+                android:textSize="18sp"
+                android:textColor="@color/third"
+                />
+            <CheckBox
+                android:id="@+id/fourth"
+                android:button="@drawable/check_box"
+                android:layoutDirection="rtl"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

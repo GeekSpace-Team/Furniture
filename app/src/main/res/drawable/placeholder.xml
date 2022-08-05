@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle">
+            <solid
+                android:color="@color/white"/>
+
+            <size
+                android:width="120dp"
+                android:height="120dp"/>
+
+            <corners
+                android:radius="10dp"/>
+        </shape>
+    </item>
+
+    <item
+        android:width="30dp"
+        android:height="27dp"
+        android:gravity="center"
+
+        >
+
+            <bitmap android:src="@drawable/placeholder_icon"
+                android:tileMode="disabled"
+                >
+
+            </bitmap>
+    </item>
+</layer-list>

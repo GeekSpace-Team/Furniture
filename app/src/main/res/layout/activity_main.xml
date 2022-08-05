@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:cameraGestureScrollHorizontal="filterControl1"
+        app:cameraGestureScrollVertical="filterControl2" />
+
+    <ImageView
+        android:id="@+id/takenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.geekspace.a3decommerce.Common.RotateZoomImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+    <ImageView
+        android:id="@+id/panorama"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@id/add_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_panorama_vertical_24"
+        app:tint="@color/first" />
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@id/gridCon"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_add_photo_alternate_24"
+        app:tint="@color/first" />
+
+    <RelativeLayout
+        android:id="@+id/gridCon"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@id/cameraFlash">
+
+        <ImageView
+            android:id="@+id/cameraGrid"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="setFlash"
+            android:src="@drawable/stroke"
+            app:tint="@color/first" />
+
+        <TextView
+            android:id="@+id/gridTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="3X3"
+            android:textAlignment="textEnd"
+            android:textColor="@color/second"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/cameraFlash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@id/cameraSwitch"
+        android:onClick="setFlash"
+        android:src="@drawable/ic_baseline_flash_off_24"
+        app:tint="@color/first" />
+
+
+    <ImageView
+        android:id="@+id/cameraSwitch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:src="@drawable/ic_baseline_switch_camera_24"
+        app:tint="@color/first" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filterRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomMenu"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/furnitureTypeRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomMenu"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:gravity="bottom"
+        android:padding="12dp">
+
+
+        <!--TYPE OF FURNITURE button-->
+        <LinearLayout
+            android:id="@+id/furnitureTypesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_baseline_style_24"
+                app:tint="@color/first" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Furniture"
+                android:textColor="@color/first"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--End of TYPE OF FURNITURE button-->
+
+
+        <!--TAKE A PHOTO button-->
+        <LinearLayout
+            android:id="@+id/takePhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_camera_24"
+                app:tint="@color/first" />
+        </LinearLayout>
+        <!--End of TAKE A PHOTO button-->
+
+
+        <!--CAMERA FILTER button-->
+        <LinearLayout
+            android:id="@+id/cameraFilterBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/image_filter"
+                app:tint="@color/first" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textColor="@color/first"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!--End of CAMERA FILTER button-->
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Ýatda saklat"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

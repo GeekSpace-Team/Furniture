@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:backgroundTint="@color/white"
+        android:background="@drawable/rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:riv_corner_radius_top_left="20dp"
+                app:riv_corner_radius_bottom_left="20dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/placeholder"
+                />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="14sp"
+                    android:textColor="@color/third"
+                    android:textStyle="bold"
+                    />
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chair"
+                android:textSize="12sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/fourth"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price:"
+                        android:textSize="11sp"
+                        android:textColor="@color/fourth"
+                        />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="850 TMT"
+                        android:textSize="13sp"
+                        android:textColor="@color/third"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total:"
+                        android:textSize="11sp"
+                        android:textColor="@color/fourth"
+                        />
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1700 TMT"
+                        android:textSize="13sp"
+                        android:textColor="@color/first"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:paddingRight="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/plus"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="+"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/third"
+                />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="2"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/third"
+                />
+
+            <TextView
+                android:id="@+id/minus"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="-"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/third"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

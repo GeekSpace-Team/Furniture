@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="gone"
+    android:id="@+id/errorContainer"
+    android:background="@color/second"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/cyrcle"
+        android:backgroundTint="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/errorImage"
+            android:layout_centerInParent="true"
+            android:layout_width="67dp"
+            android:layout_height="46dp"
+            android:src="@drawable/no_internet"
+            app:tint="@color/fourth" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/errorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/noInternet"
+        android:textSize="18sp"
+        android:textColor="@color/third"
+        />
+
+    <TextView
+        android:id="@+id/errorDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/errorDesc"
+        android:textSize="14sp"
+        android:textColor="@color/fourth"
+        />
+
+    <Button
+        android:id="@+id/errorButton"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tryAgain"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/first"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="12dp"
+        />
+
+
+
+</LinearLayout>

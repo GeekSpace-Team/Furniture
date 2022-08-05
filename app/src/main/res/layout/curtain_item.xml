@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:paddingTop="16dp"
+    android:layout_height="270dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/placeholder"
+        app:riv_corner_radius="10dp"
+        android:src="@drawable/room"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/fav"
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/cyrcle"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:padding="4dp"
+        app:tint="@color/first" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/part_round"
+        android:padding="8dp"
+        >
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chair"
+                android:textColor="@color/fourth"
+                android:textSize="12sp"
+                android:singleLine="true"
+                />
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vero Armchair"
+            android:textColor="@color/third"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500 TMT"
+            android:textColor="@color/first"
+            android:textSize="14sp"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

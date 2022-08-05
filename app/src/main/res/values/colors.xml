@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="first">#581B98</color>
+    <color name="second">#F6F8FA</color>
+    <color name="third">#4C4452</color>
+    <color name="fourth">#B1A8B9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#581B98</color>
+    <color name="colorPrimaryDark">#F6F8FA</color>
+    <color name="colorAccent">#581B98</color>
+    <color name="transparentBlack">#95000000</color>
+    <color name="skeleton">#DCDCDC</color>
+    <color name="skeletonColor">#E4E4E4</color>
+
+</resources>

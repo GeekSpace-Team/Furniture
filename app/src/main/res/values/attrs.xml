@@ -1,0 +1,15 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+        <attr name="first" format="color"/>
+        <attr name="second" format="color"/>
+        <attr name="third" format="color"/>
+        <attr name="fourth" format="color"/>
+        <attr name="white" format="color"/>
+        <attr name="colorPrimary" format="color"/>
+        <attr name="colorPrimaryDark" format="color"/>
+        <attr name="colorAccent" format="color"/>
+        <attr name="transparentBlack" format="color"/>
+    </declare-styleable>
+</resources>
